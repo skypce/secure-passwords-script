@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+SEL=$(xsel -o)
+echo "$SEL" | sha1sum | ascii85 > /tmp/output
+xclip -i "/tmp/output" -selection clipboard
+xdotool key ctrl+v
+#zenity --text-info --width=500 --height=50 --title="Password generator" --filename=/tmp/output
