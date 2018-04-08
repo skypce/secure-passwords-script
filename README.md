@@ -12,11 +12,15 @@ Ubuntu:
 ```sh
 sudo apt-get install xdotool xsel xclip
 ```
+```sh
 chmod +x pass
+```
+```sh
 sudo mv pass /usr/local/bin
-
+```
+```sh
 Go to system settings -> Keyboard -> Shortcuts -> Add a custom shortcut and assign a key to it.
-
+```
 ## Usage example
 
 When you create a website account, use your password, select it and apply the script. You can see the result.
