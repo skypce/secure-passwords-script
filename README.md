@@ -1,9 +1,5 @@
-# Product Name
-> Secure password generator script
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+# Secure password generator script
+ 
 
 That uses a phrassphrase proccessed with sha1sum and ascii85 and paste in place the generated password.
 
