@@ -10,7 +10,7 @@ That uses a phrassphrase proccessed with sha1sum and ascii85 and paste in place 
 Ubuntu:
 
 ```sh
-sudo apt-get install xdotool xsel xclip
+sudo apt-get install xdotool xsel xclip ruby-ascii85
 ```
 ```sh
 chmod +x pass
