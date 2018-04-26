@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
+VAR=date
 SEL=$(xsel -o)
-echo "$SEL" | sha1sum | ascii85 > /tmp/output
-xclip -i "/tmp/output" -selection clipboard
+echo "$SEL" | md5sum | ascii85 > /tmp/$VAR
+xclip -i "/tmp/$VAR" -selection clipboard
 xdotool key ctrl+v
-#zenity --text-info --width=500 --height=50 --title="Password generator" --filename=/tmp/output
+rm /tmp/$VAR
+#zenity --text-info --width=500 --height=50 --title="Password generator" --filename=/tmp/$VAR
